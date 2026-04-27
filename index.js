@@ -4,7 +4,17 @@ const cors = require('cors');
 const app = express();
 app.use(cors());
 app.use(express.json());
+const express = require('express');
+const app = express();
 
+// 👇 Add this
+app.get('/', (req, res) => {
+  res.send('Server is running 🚀');
+});
+
+// your other routes...
+
+app.listen(3000, () => console.log('Server running'));
 /* 
  * VERCEL LIMITATION WARNING:
  * Vercel's serverless environment has a "Read-Only" filesystem.
