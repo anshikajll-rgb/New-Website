@@ -14,7 +14,6 @@ app.get('/', (req, res) => {
 
 // your other routes...
 
-app.listen(3000, () => console.log('Server running'));
 import express from "express";
 
 const app = express();
